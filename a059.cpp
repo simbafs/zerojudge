@@ -13,3 +13,4 @@ int main(){
     cout <<a<<' '<<b<<endl;
   }
 }
+
