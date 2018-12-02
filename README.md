@@ -1,11 +1,11 @@
 This my codes to the quesrion on ZeroJudge.
 ===========================================
-**Finish:**
-*a095  
-*a059  
+**Finish:**  
+* a095  
+* a059  
 ---
 **Give Up:**
-*a291  
+* a291    
 ---
-**Working:**
+**Working:**  
 no
