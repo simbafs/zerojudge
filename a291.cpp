@@ -1,6 +1,9 @@
 #include <iostream>
 
 using namespace std;
+os_base::sync_with_stdio(false);
+
+cin.tie(NULL);
 
 int ans[4]={1,2,3,4};
 int n=4;
@@ -48,38 +51,41 @@ int initGuess(){
 }
 
 int main(){
-	for(int i=0;i<4;i++) cin>>ans[i];
-	cin  >> n;
-	for(int i=0;i<n;i++){
-		for (int j=0;j<4;j++){
-			cin  >>guess[i][j];
-		}
-	}
-	for(int i=0;i<n;i++){
-		int a=0;
-		int b=0;
-		int marked[10]={};//stat of num
-		for(int j=0;j<4;j++){ // a
-			if(guess[i][j]==ans[j]){
-				a++;
-				marked[guess[i][j]]=1;//this num has been marked
-//				cout<<"debug: A: guess["<<i<<"]["<<j<<"]"<<endl;
+	while(!cin.eof()) {
+	  cin>>ans[0]>>ans[1]>>ans[2]>>ans[3];
+		cin  >> n;
+		for(int i=0;i<n;i++){
+			for (int j=0;j<4;j++){
+				cin  >>guess[i][j];
 			}
 		}
-
-		// b
-		for(int j=0;j<4;j++){		//guess
-			if(marked[guess[i][j]]==1) continue;
-			for(int k=0;k<4;k++){	//ans
-				if(guess[i][j]==ans[k] && j!=k){
-					b++;
-					marked[guess[i][j]]=1;
+		for(int i=0;i<n;i++){
+			int a=0;
+			int b=0;
+			int marked[10]={};//stat of num
+			for(int j=0;j<4;j++){ // a
+				if(guess[i][j]==ans[j]){
+					a++;
+					marked[guess[i][j]]=1;//this num has been marked
+	//				cout<<"debug: A: guess["<<i<<"]["<<j<<"]"<<endl;
 				}
 			}
+	
+			// b
+			for(int j=0;j<4;j++){		//guess
+				if(marked[guess[i][j]]==1) continue;
+				for(int k=0;k<4;k++){	//ans
+					if(guess[i][j]==ans[k] && j!=k){
+						b++;
+						marked[guess[i][j]]=1;
+					}
+				}
+			}
+	
+			cout<<a<<"A"<<(b)<<"B"<<endl;
 		}
-
-		cout<<a<<"A"<<(b)<<"B"<<endl;
 	}
-//	showInput();
+	
+	//	showInput();
 	return 0;
 }
