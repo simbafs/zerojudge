@@ -1,4 +1,5 @@
-![ ZreoJudge](https://drive.google.com/file/d/1kjEugQq70acnQ5y1NGJ5qN78d_yfzn27/view?usp=sharing)
+![ ZreoJudge](https://github.com/simbafs/zerojudge/blob/master/img/zj.png)  
+
 This my codes to the quesrion on [ZeroJudge](https://zerojudge.tw/)
 ===================================================================
 **Finish:**  
