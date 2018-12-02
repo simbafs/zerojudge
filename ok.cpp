@@ -20,6 +20,7 @@ int main(int argc,char* argv[]){
 	if(ans=='y' || ans=='Y'){
 		system("git add *");
 		system(c);
+		system("git push zj");
 	}
 	return 0;
 }
