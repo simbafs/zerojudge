@@ -19,7 +19,7 @@ int isAppearFirst(int a[],int n){
 }
 
 int showInput(){
-	cout << "\tans: ";
+	cout << "ans:\t ";
 	for(int i=0;i<4;i++) cout << ans[i] << ' ';
 	cout << endl;
 	cout << "guess:\n";
@@ -48,31 +48,38 @@ int initGuess(){
 }
 
 int main(){
-	/*
 	for(int i=0;i<4;i++) cin>>ans[i];
 	cin  >> n;
-	for(int i=0;i<n;i++)
-		for (int j=0;j<4;j++)
-			cin  >> guess[i][j];
-	*/
-//	initGuess();
+	for(int i=0;i<n;i++){
+		for (int j=0;j<4;j++){
+			cin  >>guess[i][j];
+		}
+	}
 	for(int i=0;i<n;i++){
 		int a=0;
 		int b=0;
+		int marked[10]={};//stat of num
 		for(int j=0;j<4;j++){ // a
 			if(guess[i][j]==ans[j]){
 				a++;
+				marked[guess[i][j]]=1;//this num has been marked
+//				cout<<"debug: A: guess["<<i<<"]["<<j<<"]"<<endl;
 			}
 		}
-		for(int j=0;j<4;j++){ //b	index of guess
-			for(int k=0;k<4;k++){//	index of ans
-				if(isAppearFirst(guess[i],j) && isAppearFirst(ans,k)){
-					if(guess[j][k]==ans[k] && j!=k) b++;
+
+		// b
+		for(int j=0;j<4;j++){		//guess
+			if(marked[guess[i][j]]==1) continue;
+			for(int k=0;k<4;k++){	//ans
+				if(guess[i][j]==ans[k] && j!=k){
+					b++;
+					marked[guess[i][j]]=1;
 				}
 			}
 		}
+
 		cout<<a<<"A"<<(b)<<"B"<<endl;
 	}
-	showInput();
+//	showInput();
 	return 0;
 }
