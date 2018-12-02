@@ -4,8 +4,8 @@ This my codes to the quesrion on ZeroJudge.
 a095
 a059
 
-**forgive:**
+**Give Up:**
 a291
 
-**working**
+**Working**
 no
