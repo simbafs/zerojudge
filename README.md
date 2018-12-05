@@ -1,6 +1,6 @@
 ![ ZreoJudge](https://github.com/simbafs/zerojudge/blob/master/img/zj.png)  
 
-This my codes to the quesrion on [ZeroJudge](https://zerojudge.tw/)
+This my codes to the quesrions on [ZeroJudge](https://zerojudge.tw/)
 ===================================================================
 **Finish:**  
 -----------
