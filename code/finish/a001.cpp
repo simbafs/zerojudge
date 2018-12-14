@@ -1,8 +1,11 @@
 #include <iostream>
+
 using namespace std;
+
 int main(){
 	char a[65536]={};
-	scanf("%s",a)
-	printf("hello, %s\n",a);
+	while(cin >>a){
+		cout<< "hello, " << a <<endl;
+	}
 	return 0;
 }
