@@ -10,6 +10,7 @@ This my codes to the quesrions on [ZeroJudge](https://zerojudge.tw/)
 * a002
 * a003
 * a004
+* a005
 ---
 **Give Up:**  
 ------------
