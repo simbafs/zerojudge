@@ -11,6 +11,7 @@ This my codes to the quesrions on [ZeroJudge](https://zerojudge.tw/)
 * a003
 * a004
 * a005
+* a006
 ---
 **Give Up:**  
 ------------
