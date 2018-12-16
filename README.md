@@ -12,6 +12,7 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 * a004
 * a005
 * a006
+* test.cpp
 ---
 **Give Up:**  
 ------------
