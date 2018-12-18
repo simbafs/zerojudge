@@ -13,6 +13,7 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 * a005
 * a006
 * a009
+* a010
 ---
 **Give Up:**  
 ------------
