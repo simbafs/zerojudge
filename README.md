@@ -2,7 +2,7 @@
 
 This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 ===================================================================
-**Finish:**  
+**Finished:**  
 -----------
 * a095  
 * a059  
@@ -15,7 +15,7 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 * a009
 * a010
 ---
-**Give Up:**  
+**Skip:**  
 ------------
 * a291    
 ---
