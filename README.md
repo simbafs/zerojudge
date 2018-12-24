@@ -22,6 +22,7 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 **Working:**  
 ------------
 * d624
+* c359
 ---
 
 **My ZeroJudge Account:**  
