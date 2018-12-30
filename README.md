@@ -18,6 +18,7 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 * c350  
 * a020
 * a022
+* a034
 ---
 **Skip:**  
 ------------
