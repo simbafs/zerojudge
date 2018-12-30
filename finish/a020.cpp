@@ -77,7 +77,7 @@ int tab(char a){
 			return 28;
 		case 'V':
 			return 29;
-		case 'w':
+		case 'W':
 			return 32;
 		case 'X':
 			return 30;
