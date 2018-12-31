@@ -20,6 +20,7 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 * a022
 * a034
 * a038
+* a040
 ---
 **Skip:**  
 ------------
