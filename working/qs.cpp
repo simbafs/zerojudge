@@ -34,26 +34,29 @@ int qs(int head, int tail){
 	if(head >= tail){
 		return 0;
 	}
-	int flag = (head+tail)/2;
+	int flag = num[(head+tail)/2];
 	int* indexh = num+head;
 	int* indext = num+tail;
 	while(indexh <= indext){
-		while(*indexh < num[flag]) indexh++;
-		while(*indext > num[flag]) indext--;
+		while(*indexh <= flag) indexh ++;
+		while(*indext > flag) indext --;
 		ex(indexh,indext);
-		
+		indexh ++;
+		indext --;
+
 		cout << indexh-num << ' ' << indext-num << ' ' << flag << " <> ";
 		for(int i=0;i<n;i++) cout << num[i] << ' ';
 		cout << endl;
 	}
 
 	
-	cout << head << ' ' << tail << ' ' << flag << " >> ";
+	cout << head << ' ' << tail << ' ' << (head+tail)/2 << " >> ";
 	for(int i=0;i<n;i++) cout << num[i] << ' ';
 	cout << endl;
-
-	qs(head,flag-1);
-	qs(flag+1,tail);
+	cout << "indexh-num= " << indexh-num << endl
+			 << "indext-num= " << indext-num << endl;
+	qs(head,indexh-num-1);
+	qs(indexh-num,tail);
 	return 0;
 }
 
