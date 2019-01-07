@@ -32,6 +32,7 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 ------------
 * d624
 * c359
+* a054
 ---
 **My ZeroJudge Account:**  
 -------------------------
