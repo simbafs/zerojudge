@@ -27,6 +27,7 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 **Skip:**  
 ------------
 * a291    
+* quick sort
 ---
 **Working:**  
 ------------
