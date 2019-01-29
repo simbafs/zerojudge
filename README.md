@@ -23,17 +23,17 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 * a040
 * a042
 * a044
+* a054
 ---
 **Skip:**  
 ------------
 * a291    
+* d624
+* c359
 * quick sort
 ---
 **Working:**  
 ------------
-* d624
-* c359
-* a054
 ---
 **My ZeroJudge Account:**  
 -------------------------

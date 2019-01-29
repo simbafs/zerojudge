@@ -4,24 +4,33 @@
 using namespace std;
 
 int tab(char);
-int thedigit(int,int);
+int digit(int,int);
+
 int main(){
 	int id = 0;
-	int muti[10]={1,9,8,7,6,5,4,3,2,1};
 	while(cin >> id){
-		int sum = 0;
-		for(int i=0; i<8; i++) sum += thedigit(id,9-i)*muti[i+2];
-		for(char i='A'; i<='Z'; i++){
-			sum += thedigit(tab(i),1)*9 
+		int weight[10]={1,9,8,7,6,5,4,3,2,1};
+		int SUM = 0;
+		//130245675
+		//987654321
+		for(int i = 2; i< 10; i++){
+			SUM += digit(id,11-i) * weight[i];
 		}
+//		cout << "> debug SUM = " << SUM << endl;
+		for(char i = 'A'; i <= 'Z'; i++){
+			int sum = SUM;
+			sum += digit(tab(i),1)*9 + digit(tab(i),2)*1;
+//			cout << "> debug i = " << i << " = " << tab(i) << " sum = " << sum << endl;
+			if((sum + digit(id,1)) % 10 == 0) cout << (char)i;
+		}
+		cout << endl;
 	}
-	
 	return 0;
 }
 
-
-int thedigit(int i,int n){
-	return 	(int)(i/pow(10,n-1))%10;
+int digit(int a,int n){
+	//10243
+	return (int)(a/pow(10,(n-1)))%10;
 }
 
 int tab(char a){
@@ -81,3 +90,4 @@ int tab(char a){
 	}
 	return 0;
 }
+
