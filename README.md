@@ -29,12 +29,13 @@ This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 * a104
 * a453
 ---
-**Skip:**  
+**GiveUp:**  
 ------------
 * a291    
 * d624
 * c359
 * quick sort
+* a121
 ---
 **Working:**  
 ------------
