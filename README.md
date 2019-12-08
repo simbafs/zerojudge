@@ -2,10 +2,6 @@
 	<img src="./img/zj.png" alt="ckcsc url">
 </div>
 
-<div align=center>
-  <img src="">
-</div>
-
 This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
 ===================================================================
 **Finished:**  
