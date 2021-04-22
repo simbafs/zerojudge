@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="./img/zj.png" alt="ckcsc url">
+	<img src="./zj.png" alt="zerojudge">
 </div>
 
 This my codes to the problems on [ZeroJudge](https://zerojudge.tw/)
