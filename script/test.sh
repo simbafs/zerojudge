@@ -7,4 +7,4 @@ if [[ -z $id ]];then
 	read id
 fi
 
-nodemon --watch $id.cpp --exec make $id && time ./$id < $id.data
+nodemon --watch $id.cpp --exec "make $id && ./$id < $id.data"
