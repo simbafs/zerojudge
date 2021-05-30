@@ -1,5 +1,3 @@
-#!/bin/bash
-
 cd $(git rev-parse --show-toplevel)/working
 id=$1
 if [[ -z $id ]];then
